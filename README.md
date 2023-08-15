@@ -2,7 +2,7 @@
 Using MINE to examine changes in Mutual Information (MI) between Male/Female labels and differently compressed images (different pixel sizes).
 CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was used for images of faces and attribute labels. 202599 faces were in the dataset, but only 60000 were used as training data (10000 more for test data) for this experiment. 
 
-
+**male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. This is not important at this time because the labels are already parsed into **male_or_female.txt**.
 
 **male_or_female.txt** contains the labels for all 202599 images for identifying gender (downloaded and parsed directly from CelebA website). Labels with 0 represent female images, and labels with 1 represent male images (changed from -1 and 1 labels to be consistent with previous MINE code).  
 
