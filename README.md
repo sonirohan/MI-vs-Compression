@@ -11,7 +11,7 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 
 **image_processor.py** is a program that takes in the unprocessed CelebA images (downloaded from the above link to the CelebA dataset), uses Python's Pillow Library to grayscale and shrink them down to different square sizes (ranging from 5x5 to 50x50, in increments of 5), then saves them. The file paths will need to be changed for your own computer.
 
-**male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. _There is no need to run this program at this time_ because the labels are already parsed into **male_or_female.txt**.
+**male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. _There is no need to run this program at this time_ because the labels are already parsed into **male_or_female.txt**. However, if a label other than gender is desired, the entire label list for every image is available at the CelebA dataset link above.
 
 **male_or_female.txt** contains the labels for all 202599 images for identifying gender (downloaded and parsed directly from CelebA website). Labels with 0 represent female images, and labels with 1 represent male images (changed from -1 and 1 labels to be consistent with previous MINE code).  
 
