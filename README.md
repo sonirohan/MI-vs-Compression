@@ -2,6 +2,13 @@
 Using MINE (Mutual Information Neural Estimator) to examine changes in Mutual Information (MI) between Male/Female labels and differently compressed images (different pixel sizes).
 CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was used for images of faces and attribute labels. 202599 faces were in the dataset, but only 60000 were used as training data (10000 more for test data) for this experiment. 
 
+**Quick Start:** 
+1. Download CelebA Dataset: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+2. Process images 1-60000 and 60001-70000 images using **image_processor.py.** This will output all the different compressed image sizes to different folders.
+3. Zip the different processed image files, then upload them to Google Drive. 
+4. Make sure all file paths in each program are updated for the current computer.
+5. Run the two **.ipynb** files to generate and save all results, both graphs and raw data. 
+
 **image_processor.py** is a program that takes in the unprocessed CelebA images (downloaded from the above link to the CelebA dataset), uses Python's Pillow Library to grayscale and shrink them down to different square sizes (ranging from 5x5 to 50x50, in increments of 5), then saves them. The file paths will need to be changed for your own computer.
 
 **male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. _There is no need to run this program at this time_ because the labels are already parsed into **male_or_female.txt**.
