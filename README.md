@@ -7,7 +7,12 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 2. Process images 1-60000 and 60001-70000 images using **image_processor.py.** This will output all the different compressed image sizes to different folders.
 3. Zip the different processed image files, then upload them to Google Drive. 
 4. Make sure all file paths in each program are updated for the current computer.
-5. Run the two **.ipynb** files to generate and save all results, both graphs and raw data. 
+5. Run the two **.ipynb** files to generate and save all results, both graphs and raw data.
+
+**Notes:** 
+ - Change the file paths in each program to match your own local drive if you would like to run them yourself.
+ - Running the .ipynb files requires a GPU (not a built-in GPU, but free Google Colab GPU service works well). 
+ - The .ipynb files were developed in Google Colab (using T4 GPU) and the .py files were developed using Spyder.
 
 **image_processor.py** is a program that takes in the unprocessed CelebA images (downloaded from the above link to the CelebA dataset), uses Python's Pillow Library to grayscale and shrink them down to different square sizes (ranging from 5x5 to 50x50, in increments of 5), then saves them. The file paths will need to be changed for your own computer.
 
@@ -20,11 +25,6 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 **DNN_Image_Classification.ipynb** is used for validation: after comparing the MI between images and labels using MINE, this program is used to train classifiers then test those classifiers on 10000 new images and labels and noting the difference in accuracy between image sizes. The result is both a graph with all the ROC curves for each tested image size and a graph with the same trend (and plateau point) as the MI vs. compression graph generated previously.
 
 **sample_results** contains figures plotting MI vs. Image Quality, a sample MI curve for 50x50 images, the Neural Network's AUC (Area Under Curve for ROC curves) curves, the sample AUC curve for 50x50 images, and raw data for each individual curve graph (50x50 given as the sample). These results are produced when each .ipynb program is run and are all automatically saved, given a usable file path.
-
-**Notes:** 
- - Change the file paths in each program to match your own local drive if you would like to run them yourself.
- - Running the .ipynb files requires a GPU (not a built-in GPU, but free Google Colab GPU service works well). 
- - The .ipynb files were developed in Google Colab (using T4 GPU) and the .py files were developed using Spyder.
 
 **References:**
  - All work was done under supervision of Homa Esfahanizadeh, Postdoctoral Associate at Massachusetts Institute of Technology.
