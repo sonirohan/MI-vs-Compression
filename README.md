@@ -1,5 +1,5 @@
 # MI-vs-Compression
-Using MINE to examine changes in Mutual Information (MI) between Male/Female labels and differently compressed images (different pixel sizes).
+Using MINE (Mutual Information Neural Estimator) to examine changes in Mutual Information (MI) between Male/Female labels and differently compressed images (different pixel sizes).
 CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was used for images of faces and attribute labels. 202599 faces were in the dataset, but only 60000 were used as training data (10000 more for test data) for this experiment. 
 
 **image_processor.py** is a program that takes in the unprocessed CelebA images (downloaded from the above link to the CelebA dataset), uses Python's Pillow Library to grayscale and shrink them down to different square sizes (ranging from 5x5 to 50x50, in increments of 5), then saves them. The file paths will need to be changed for your own computer.
@@ -16,3 +16,9 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
  - Change the file paths in each program to match your own local drive if you would like to run them yourself.
  - Running the .ipynb files requires a GPU (not a built-in GPU, but free Google Colab GPU service works well). 
  - The .ipynb files were developed in Google Colab (using T4 GPU) and the .py files were developed using Spyder.
+
+**References:**
+ - All work was done under supervision of Homa Esfahanizadeh, Postdoctoral Associate at Massachusetts Institute of Technology.
+ - All work was inspired by and based on MINE paper: https://proceedings.mlr.press/v80/belghazi18a/belghazi18a.pdf 
+ - Homa Esfahanizadeh's MINE Base Repository was the basis of the experiment in **MI_Estimation_Image_Size.ipynb:** https://github.com/hesfahanizadeh/MI_ESTIMATION_BASE
+ - Homa Esfahanizadeh's Deep Neural Network program for classification tasks was the basis of **DNN_Image_Classification.ipynb:** https://colab.research.google.com/drive/1a5DF6P7au89G4uuy0gbCg0VhJKu3LSaj?usp=sharing
