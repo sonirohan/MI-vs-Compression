@@ -12,6 +12,8 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 
 **DNN_Image_Classification.ipynb** is used for validation: after comparing the MI between images and labels using MINE, this program is used to train classifiers then test those classifiers on 10000 new images and labels and noting the difference in accuracy between image sizes. The result is both a graph with all the ROC curves for each tested image size and a graph with the same trend (and plateau point) as the MI vs. compression graph generated previously.
 
+**sample_results** contains figures plotting MI vs. Image Quality, a sample MI curve for 50x50 images, the Neural Network's AUC (Area Under Curve for ROC curves) curves, the sample AUC curve for 50x50 images, and raw data for each individual curve graph (50x50 given as the sample). These results are produced when each .ipynb program is run and are all automatically saved, given a usable file path.
+
 **Notes:** 
  - Change the file paths in each program to match your own local drive if you would like to run them yourself.
  - Running the .ipynb files requires a GPU (not a built-in GPU, but free Google Colab GPU service works well). 
