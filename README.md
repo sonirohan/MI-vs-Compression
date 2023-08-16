@@ -2,7 +2,7 @@
 Using MINE (Mutual Information Neural Estimator) to examine changes in Mutual Information (MI) between Male/Female labels and differently compressed images (different pixel sizes).
 CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was used for images of faces and attribute labels. 202599 faces were in the dataset, but only 60000 were used as training data (10000 more for test data) for this experiment. 
 
-**Quick Start:** 
+**Quickstart:** 
 1. Download CelebA Dataset: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 2. Process images 1-60000 and 60001-70000 images using **image_processor.py.** This will output all the different compressed image sizes to different folders.
 3. Zip the different processed image files, then upload them to Google Drive. 
