@@ -21,6 +21,6 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 
 **References:**
  - All work was done under supervision of Homa Esfahanizadeh, Postdoctoral Associate at Massachusetts Institute of Technology.
- - All work was inspired by and based on MINE paper: https://proceedings.mlr.press/v80/belghazi18a/belghazi18a.pdf 
+ - All work was inspired by and based on MINE paper (https://proceedings.mlr.press/v80/belghazi18a/belghazi18a.pdf), Regularized MINE paper (https://openreview.net/references/pdf?id=HIauhIkd4z), and InfoShape (https://arxiv.org/pdf/2210.15034.pdf) 
  - Homa Esfahanizadeh's MINE Base Repository was the basis of the experiment in **MI_Estimation_Image_Size.ipynb:** https://github.com/hesfahanizadeh/MI_ESTIMATION_BASE
  - Homa Esfahanizadeh's Deep Neural Network program for classification tasks was the basis of **DNN_Image_Classification.ipynb:** https://colab.research.google.com/drive/1a5DF6P7au89G4uuy0gbCg0VhJKu3LSaj?usp=sharing
