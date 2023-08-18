@@ -27,7 +27,7 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 **sample_results** contains figures plotting MI vs. Image Quality, a sample MI curve for 50x50 images, the Neural Network's AUC (Area Under Curve for ROC curves) curves, the sample AUC curve for 50x50 images, and raw data for each individual curve graph (50x50 given as the sample). These results are produced when each .ipynb program is run and are all automatically saved, given a usable file path.
 
 **References:**
- - All work was done under supervision of Homa Esfahanizadeh, Postdoctoral Associate at Massachusetts Institute of Technology.
+ - All work was done under supervision of Dr. Homa Esfahanizadeh, Postdoctoral Associate at Massachusetts Institute of Technology, in the Network Coding and Reliable Communications Group under Professor Muriel Médard.
  - All work was inspired by and based on MINE paper (https://proceedings.mlr.press/v80/belghazi18a/belghazi18a.pdf), Regularized MINE paper (https://openreview.net/references/pdf?id=HIauhIkd4z), and InfoShape (https://arxiv.org/pdf/2210.15034.pdf) 
  - Homa Esfahanizadeh's MINE Base Repository was the basis of the experiment in **MI_Estimation_Image_Size.ipynb:** https://github.com/hesfahanizadeh/MI_ESTIMATION_BASE
  - Homa Esfahanizadeh's Deep Neural Network program for classification tasks was the basis of **DNN_Image_Classification.ipynb:** https://colab.research.google.com/drive/1a5DF6P7au89G4uuy0gbCg0VhJKu3LSaj?usp=sharing
