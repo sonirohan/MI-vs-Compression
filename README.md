@@ -3,7 +3,7 @@ Using MINE (Mutual Information Neural Estimator) to examine changes in Mutual In
 CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was used for images of faces and attribute labels. 202599 faces were in the dataset, but only 60000 were used as training data (10000 more for test data) for this experiment. 
 
 **Quickstart:** 
-1. Download CelebA Dataset: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+1. Download CelebA Dataset: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html (downloaded 8/18/2023)
 2. Process images 1-60000 and 60001-70000 images using **image_processor.py.** This will output all the different compressed image sizes to different folders.
 3. Zip the different processed image files, then upload them to Google Drive. 
 4. Make sure all file paths in each program are updated for the current computer.
@@ -16,9 +16,9 @@ CelebA dataset (link: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) was use
 
 **image_processor.py** is a program that takes in the unprocessed CelebA images (downloaded from the above link to the CelebA dataset), uses Python's Pillow Library to grayscale and shrink them down to different square sizes (ranging from 5x5 to 50x50, in increments of 5), then saves them. The file paths will need to be changed for your own computer.
 
-**male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. _There is no need to run this program at this time_ because the labels are already parsed into **male_or_female.txt**. However, if a label other than gender is desired, the entire label list for every image is available at the CelebA dataset link above.
+**male_or_female_lister.py** is a program that grabs all the male/female labels from the original CelebA dataset attribute list. _There is no need to run this program at this time_ because the labels are already parsed into **male_or_female.txt**. However, if a label other than gender is desired, the entire label list for every image is available at the CelebA dataset link above. 
 
-**male_or_female.txt** contains the labels for all 202599 images for identifying gender (downloaded and parsed directly from CelebA website). Labels with 0 represent female images, and labels with 1 represent male images (changed from -1 and 1 labels to be consistent with previous MINE code).  
+**male_or_female.txt** contains the labels for all 202599 images for identifying gender (downloaded and parsed directly from CelebA website). Labels with 0 represent female images, and labels with 1 represent male images (changed from -1 and 1 labels to be consistent with previous MINE code). Make sure to change this file's name and data if a different label is desired. 
 
 **MI_Estimation_Image_Size.ipynb** is the first experiment done to estimate the MI between the first 60000 images processed by **image_processor.py** (the original plan was to compress images up to 175x175, but the trend of MI plateau'ed after 30x30 and it would take too long). It shows the MI Estimation curves for each different image compression on one plot, as well as the trend in MI vs. compression.
 
